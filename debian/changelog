@@ -1,0 +1,111 @@
+librepository (1.1.6-4) unstable; urgency=medium
+
+  * Team upload
+  * Use debhelper-compat 13
+  * Update Vcs URLs to point to Salsa
+  * Freshen debian/copyright
+  * Bump Standards-Version to 4.5.1
+  * Set "Rules-Requires-Root: no" in debian/control
+
+ -- tony mancill <tmancill@debian.org>  Tue, 22 Dec 2020 16:06:07 -0800
+
+librepository (1.1.6-3.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 22 Dec 2020 19:47:40 +0100
+
+librepository (1.1.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on libmail-java instead of libgnumail-java
+  * Removed the recommended dependency on librepository-java-gcj
+  * Build with the DH sequencer instead of CDBS
+  * Added the Homepage field
+  * Moved the package to Git
+  * Standards-Version updated to 3.9.8
+  * Switch to debhelper level 10
+  * Switch to source format 3.0 (quilt)
+  * Converted debian/copyright to the Copyright Format 1.0
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 08 Nov 2016 10:44:50 +0100
+
+librepository (1.1.6-2) unstable; urgency=low
+
+  * merge libbase 1.1.6-2 changes
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 01 Nov 2011 15:22:48 +0000
+
+librepository (1.1.6-1) unstable; urgency=low
+
+  * New upstream release
+  * switch back to Debian Java Maintainers, me as Uploader
+  * remove JRE depends
+  * add classpath to jar using jh_classpath
+  * stop building -gcj, we don't have one in the rest of jfreereport libs
+    either (and fix build-dep: s/default-jdk-builddep/default-jdk/)
+  * use jh_depends / ${java:Depends}
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 25 Sep 2011 20:51:27 +0000
+
+librepository (0.1.4-5) unstable; urgency=low
+
+  [ Miguel Landaeta ]
+  * Team upload.
+  * Include javadoc files in librepository-java-doc. (Closes: #601216).
+  * Bump Standards-Version to 3.9.1. No changes were required.
+  * Set debian source format explicitly to 1.0.
+
+  [ Torsten Werner ]
+  * QA upload.
+  * Orphaning package.
+
+ -- Torsten Werner <twerner@debian.org>  Tue, 16 Aug 2011 22:53:43 +0200
+
+librepository (0.1.4-4) unstable; urgency=low
+
+  [ Matthias Klose ]
+  * Depend on default-jre-headless.
+
+  [ Torsten Werner ]
+  * Add myself to Uploaders.
+  * Reset Maintainer back to Debian Java Maintainers.
+  * Add missing Depends: ${misc:Depends}.
+  * Add Vcs-* headers.
+  * Update Standards-Version: 3.8.2.
+
+ -- Torsten Werner <twerner@debian.org>  Mon, 03 Aug 2009 22:33:03 +0200
+
+librepository (0.1.4-3) unstable; urgency=low
+
+  * use default-jdk-builddep (closes: #477887)
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 27 Apr 2008 00:29:04 +0200
+
+librepository (0.1.4-2) unstable; urgency=low
+
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 27 Apr 2008 00:29:02 +0200
+
+librepository (0.1.4-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 29 Dec 2007 20:39:09 +0100
+
+librepository (0.1.1-2) unstable; urgency=low
+
+  * Fixed typos in long descriptions. Closes: #446603.
+  * Build-Depends on debhelper >= 5.
+  * Updated Standards-Version to 3.7.2.
+  * Added myself to Uploaders.
+
+ -- Michael Koch <konqueror@gmx.de>  Wed, 24 Oct 2007 13:04:55 +0200
+
+librepository (0.1.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 06 Oct 2007 16:35:33 +0200

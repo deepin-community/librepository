@@ -1,0 +1,49 @@
+---------------
+1.  WHAT's NEW
+---------------
+A list of changes in recent versions:
+
+0.2.0: (30-May-2008)
+       * Code-hardening: Explict checks for Null-Values added.
+  
+       * Switched from JCommon to LibBase. All version information is now contained in
+         the manifest. The Project-Info implementation reads the version numbers from
+         the Jar's Manifest or the compiler-output-directory.
+
+       * Completed the ZIP repositories. The library now provides three flavors:
+         - read-only streaming repository
+         - write-only streaming repository
+         - read-write memory-buffered repository
+
+       * [BUG] Generating ZIP repositories was generally unstable. The repository did
+         not write un-compressed entries as it required a precomputed CRC32 checksum.
+         
+0.1.6: (30-Nov-2007)
+       * Updated the error messages for the file-repository.
+         We now explicitly check whether the directories for
+         the content-locations exist. If they do not exist,
+         the implementation throws exceptions ..
+
+0.1.5: (02-Nov-2007)
+        * Upgraded to jcommon-1.0.12
+
+0.1.4: (16-Oct-2007)
+        * Automatic fixes as reported by IntelliJ-IDEA's inspections
+    
+        * Updated the copyright header on all java-files
+
+0.1.3: (24-Sep-2007)
+        * All releases are now built with JDK 1.4. However, we are still compatible
+          with JDK 1.2.2 and all releases run and compile under that release.
+
+0.1.2: (30-Jun-2007)
+        * [BUG] The ZIP-Repository was not closed correctly, causing unreadable files.
+    
+        * The default-name-generator tries to extract a suitable default-suffix from
+          the given default-filename.
+
+0.1.1: (27-May-2007)
+        * Added a mime-type mapping for CSS-files. Mime-Mapping should be configurable.
+    
+0.1.0: (03-Dec-2006)
+        * Initial version.

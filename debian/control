@@ -1,0 +1,56 @@
+Source: librepository
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Rene Engelhard <rene@debian.org>
+Build-Depends:
+ ant,
+ ant-contrib,
+ debhelper-compat (= 13),
+ default-jdk,
+ javahelper,
+ libbase-java,
+ libcommons-logging-java,
+ libmail-java,
+ libjcommon-java (>= 1.0.10)
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/java-team/librespository.git
+Vcs-Browser: https://salsa.debian.org/java-team/librepistory
+Homepage: https://github.com/pentaho/pentaho-reporting
+Rules-Requires-Root: no
+
+Package: librepository-java
+Architecture: all
+Depends: ${java:Depends}, ${misc:Depends}
+Suggests: librepository-java-doc
+Description: abstraction library for accessing hierachic bulk content
+ LibRepository provides a simple abstraction layer to access bulk content that
+ is organized in a hierarchical layer.
+ .
+ Unlike the JSR-000170, this library does not aim to solve all problems
+ associated with content storages. The main purpose of LibRepository is to
+ give users an abstract view over an filesystem like structure so that content
+ generator and content consumer do no longer have to make assumptions about
+ where to store the generated content.
+ .
+ The repositories described here should not be used to store other things than
+ BLOBs.
+
+Package: librepository-java-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: abstraction library for accessing hierachic bulk content -- documentation
+ LibRepository provides a simple abstraction layer to access bulk content that
+ is organized in a hierarchical layer.
+ .
+ Unlike the JSR-000170, this library does not aim to solve all problems
+ associated with content storages. The main purpose of LibRepository is to
+ give users an abstract view over an filesystem like structure so that content
+ generator and content consumer do no longer have to make assumptions about
+ where to store the generated content.
+ .
+ The repositories described here should not be used to store other things than
+ BLOBs.
+ .
+ This package contains the Javadoc.

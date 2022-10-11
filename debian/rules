@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export CLASSPATH = /usr/share/java/jcommon.jar:/usr/share/java/libbase.jar:/usr/share/java/javax.mail.jar:/usr/share/java/commons-logging.jar
+
+%:
+	dh $@ --with javahelper
+
+override_dh_auto_build:
+	dh_auto_build -- compile jar javadoc
+	mv dist/librepository-*.jar dist/librepository.jar
